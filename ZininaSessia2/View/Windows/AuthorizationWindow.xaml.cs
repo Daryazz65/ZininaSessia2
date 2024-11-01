@@ -38,7 +38,7 @@ namespace ZininaSessia2.View.Windows
                 {
                     if (RoleCmb.SelectedIndex == 0)
                     {
-                        UserrWindow userrWindow = new UserrWindow();
+                        UserrWindow userrWindow = new UserrWindow(AuthoriseHelper.selectedUser);
                         userrWindow.Show();
                         Close();
                     }
