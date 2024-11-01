@@ -20,6 +20,5 @@
         <Border Height="20"/>
         <Button Name="EntrytBtn" Content="Подтвердить" 
                 Click="EntrytBtn_Click"/>
-        <!--GHGHGJ-->
     </StackPanel>
 </Window>
