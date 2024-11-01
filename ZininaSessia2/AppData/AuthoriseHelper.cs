@@ -26,7 +26,7 @@ namespace ZininaSessia2.AppData
             }
             else
             {
-                if (role == "Директор")
+                if (role == "Сотрудник методички")
                 {
                     List<User> users = _context.User.ToList();
                     foreach (User org in users)
