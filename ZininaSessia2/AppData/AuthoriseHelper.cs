@@ -26,14 +26,14 @@ namespace ZininaSessia2.AppData
             }
             else
             {
-                if (role == "Сотрудник методички")
+                if (role == "Cотрудник методички")
                 {
                     List<User> users = _context.User.ToList();
-                    foreach (User org in users)
+                    foreach (User us in users)
                     {
-                        if (login == org.Login && password == org.Password)
+                        if (login == us.Login && password == us.Password)
                         {
-                            selectedUser = org;
+                            selectedUser = us;
                             return true;
                         }
                     }

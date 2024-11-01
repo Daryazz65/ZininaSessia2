@@ -24,7 +24,7 @@ namespace ZininaSessia2.View.Windows
         private static user25Entities _context = App.GetContext();
         public AuthorizationWindow()
         {
-            List<string> roles = new List<string> { "Cотрудник методички", "Сисадмин" };
+            List<string> roles = new List<string> { "Cотрудник методички"};
             InitializeComponent();
             RoleCmb.ItemsSource = roles;
         }
@@ -53,6 +53,9 @@ namespace ZininaSessia2.View.Windows
             Close();
         }
 
-       
+        private void EnterHl_Click(object sender, RoutedEventArgs e)
+        {
+            // ---.
+        }
     }
 }
