@@ -26,7 +26,6 @@ namespace ZininaSessia2.View.Windows
         {
             InitializeComponent();
             _selectedUser = selectedUser;
-
         }
 
         private void OneHl_Click(object sender, RoutedEventArgs e)
