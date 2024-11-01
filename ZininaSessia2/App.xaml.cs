@@ -14,6 +14,7 @@ namespace ZininaSessia2
     /// </summary>
     public partial class App : Application
     {
+        internal static object context;
         private static user25Entities _context;
         public static user25Entities GetContext()
         {

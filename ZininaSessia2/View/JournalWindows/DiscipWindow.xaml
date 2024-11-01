@@ -16,32 +16,8 @@
         <TextBlock Text="Сведения о дисциплинах" FontWeight="Bold" 
                    HorizontalAlignment="Center"/>
         <Grid Grid.Row="1" Margin="10">
-            
-            <ListView Name="SpecialitesLv" SelectionChanged="SpecialitesLv_SelectionChanged">
-                <ListView.View>
-                    <GridView>
-                        <!-- Создаем столбцы. -->
-                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Specialties.Name}"/>
-                        <GridViewColumn Header="Qualification" DisplayMemberBinding="{Binding Specialties.Qualification}"/>
-                        <GridViewColumn Header="Duration" DisplayMemberBinding="{Binding Specialties.Duration}"/>
-                        <GridViewColumn Header="Duration" DisplayMemberBinding="{Binding EducationForm.Name}"/>
-                        <!--<GridViewColumn.CellTemplate>
-                                <DataTemplate>
-                                    <TextBlock>
-                                        <TextBlock.Text>
-                                            <MultiBinding StringFormat="{}{0} {1} {2}">
-                                                <Binding Path="author.LastName"/>
-                                                <Binding Path="author.FirstName"/>
-                                                <Binding Path="author.MiddleName"/>
-                                            </MultiBinding>
-                                        </TextBlock.Text>
-                                    </TextBlock>
-                                </DataTemplate>
-                            </GridViewColumn.CellTemplate>-->
+            <ListBox Name="DicpLb" SelectionChanged="DicpLb_SelectionChanged"/>
 
-                    </GridView>
-                </ListView.View>
-            </ListView>
         </Grid>
     </Grid>
 </Window>

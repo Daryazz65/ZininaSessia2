@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ZininaSessia2.Model;
 
 namespace ZininaSessia2.View.JournalWindows
 {
@@ -19,9 +20,44 @@ namespace ZininaSessia2.View.JournalWindows
     /// </summary>
     public partial class SpecWindow : Window
     {
+        User _selectedUser;
+        string password = string.Empty;
+        string newPassword = string.Empty;
+        private static user25Entities _context = App.GetContext();
         public SpecWindow()
         {
             InitializeComponent();
+
+        }
+
+        private void ChangeNameCb_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ChangeNameCb_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void IsVisibleCb_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void IsVisibleCb_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OkBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CancelBtn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
