@@ -5,17 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZininaSessia2.View.Windows"
         mc:Ignorable="d"
-        Title="Окно отчета" Height="500" Width="1200"
+        Title="Окно отчета" Height="500" Width="500"
         WindowStartupLocation="CenterScreen">
     <Grid Name="ProfileGrid">
-        <!--<Grid.RowDefinitions>
-            <RowDefinition Height=".15*" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
 
         <TextBlock Text="Отчетный журнал" FontWeight="Bold" 
                    HorizontalAlignment="Center"/>
-        <Grid Grid.Row="1" Margin="10">
+        <TextBlock Grid.Row="1" FontSize="25" HorizontalAlignment="Center"><Hyperlink Name="OneHl" 
+                    Click="OneHl_Click">Сведения о специальности</Hyperlink></TextBlock>
+        <TextBlock Grid.Row="2" FontSize="25" HorizontalAlignment="Center"><Hyperlink Name="TwoHl" 
+                    Click="TwoHl_Click">Сведения о кафедре</Hyperlink></TextBlock>
+        <TextBlock Grid.Row="3" FontSize="25" HorizontalAlignment="Center"><Hyperlink Name="ThreeHl" 
+                    Click="ThreeHl_Click">Сведения о дисциплине </Hyperlink></TextBlock>
+        
+        <!--<Grid Grid.Row="1" Margin="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width=".8*" />
@@ -24,22 +33,24 @@
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width=".6*" />
-                    <ColumnDefinition Width="1*" />
                 </Grid.ColumnDefinitions>
 
                 <StackPanel>
-                    <TextBlock Text="ФИО:"/>
+                    <TextBlock Text="Сведения о специальности"/>
                     <Border Height="5"/>
-                    <TextBlock Text="Пол:"/>
+                    <TextBlock Text="Сведения о кафедре"/>
                     <Border Height="5"/>
-                    <TextBlock Text="Дата рождения:"/>
+                    <TextBlock Text="Сведения о дисциплине"/>
                     <Border Height="5"/>
-                    <TextBlock Text="Id Number:"/>
+                    <TextBlock Text=""/>
                     <Border Height="5"/>
                     <TextBlock Text="Телефон:"/>
                     <Border Height="5"/>
                     <TextBlock Text="Email:"/>
                 </StackPanel>
+
+
+
                 <StackPanel Grid.Column="1">
                     <TextBlock Text="{Binding Name}" />
                     <Border Height="5"/>
@@ -68,8 +79,9 @@
                 <Border Height="5"/>
                 <Grid Name="PasswordGrid">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width=".8*" />
-                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="13*"/>
+                        <ColumnDefinition Width="20*" />
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="1*" />
@@ -102,7 +114,7 @@
                         </StackPanel>
                     </StackPanel>
                 </Grid>
-            </StackPanel>-->
-        <!--</Grid>-->
+            </StackPanel>
+        </Grid>-->
     </Grid>
 </Window>

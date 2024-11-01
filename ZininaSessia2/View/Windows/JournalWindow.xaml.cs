@@ -23,5 +23,20 @@ namespace ZininaSessia2.View.Windows
         {
             InitializeComponent();
         }
+
+        private void OneHl_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TwoHl_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ThreeHl_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
