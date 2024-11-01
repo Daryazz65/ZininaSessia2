@@ -4,6 +4,15 @@
              xmlns:local="clr-namespace:ZininaSessia2"
              StartupUri="\View\Windows\AuthorizationWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="\Styles\TextBlockSt.xaml"/>
+                <ResourceDictionary Source="\Styles\TextBoxSt.xaml"/>
+                <ResourceDictionary Source="\Styles\ButtonSt.xaml"/>
+                <ResourceDictionary Source="\Styles\ComboBoxSt.xaml"/>
+                <ResourceDictionary Source="\Styles\PasswordBoxSt.xaml"/>
+                <ResourceDictionary Source="\Styles\DatePickerSt.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
