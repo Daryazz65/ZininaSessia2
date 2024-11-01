@@ -35,8 +35,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,6 +64,51 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\AssessmentType.cs">
+      <DependentUpon>ModelZinina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Departments.cs">
+      <DependentUpon>ModelZinina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DepartmentSubjects.cs">
+      <DependentUpon>ModelZinina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EducationForm.cs">
+      <DependentUpon>ModelZinina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Faculties.cs">
+      <DependentUpon>ModelZinina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Gender.cs">
+      <DependentUpon>ModelZinina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ModelZinina.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelZinina.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ModelZinina.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelZinina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ModelZinina.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelZinina.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Roles.cs">
+      <DependentUpon>ModelZinina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Specialties.cs">
+      <DependentUpon>ModelZinina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Subjects.cs">
+      <DependentUpon>ModelZinina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\User.cs">
+      <DependentUpon>ModelZinina.tt</DependentUpon>
+    </Compile>
     <Compile Include="View\Windows\AuthorizationWindow.xaml.cs">
       <DependentUpon>AuthorizationWindow.xaml</DependentUpon>
     </Compile>
@@ -101,6 +155,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="Model\ModelZinina.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelZinina.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\ModelZinina.edmx.diagram">
+      <DependentUpon>ModelZinina.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -111,7 +173,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AppData\" />
-    <Folder Include="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\ModelZinina.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModelZinina.Context.cs</LastGenOutput>
+      <DependentUpon>ModelZinina.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model\ModelZinina.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelZinina.edmx</DependentUpon>
+      <LastGenOutput>ModelZinina.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
