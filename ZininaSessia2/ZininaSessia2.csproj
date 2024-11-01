@@ -64,6 +64,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AppData\AuthoriseHelper.cs" />
+    <Compile Include="AppData\MessageBoxHelper.cs" />
     <Compile Include="Model\AssessmentType.cs">
       <DependentUpon>ModelZinina.tt</DependentUpon>
     </Compile>
@@ -116,6 +118,24 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="View\Windows\BlockWindow.xaml.cs">
+      <DependentUpon>BlockWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\CAPTCHAWindow.xaml.cs">
+      <DependentUpon>CAPTCHAWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\JournalWindow.xaml.cs">
+      <DependentUpon>JournalWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\ProfileWindow.xaml.cs">
+      <DependentUpon>ProfileWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\SignUpWindow.xaml.cs">
+      <DependentUpon>SignUpWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\UserrWindow.xaml.cs">
+      <DependentUpon>UserrWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="Styles\ButtonSt.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -141,6 +161,30 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Windows\AuthorizationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\BlockWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\CAPTCHAWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\JournalWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\ProfileWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\SignUpWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\UserrWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -179,9 +223,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AppData\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Model\ModelZinina.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -193,6 +235,7 @@
       <DependentUpon>ModelZinina.edmx</DependentUpon>
       <LastGenOutput>ModelZinina.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\Images\istockphoto-1347624705-612x612.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
